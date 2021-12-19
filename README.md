@@ -1,1 +1,1 @@
-# simpla-image-list
+# simple-image-list
