@@ -38,6 +38,7 @@
     "jest": "latest",
     "lint-staged": "^12.1.3",
     "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
     "typescript": "~4.3.5"
   },
   "lint-staged": {
