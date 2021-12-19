@@ -1,0 +1,18 @@
+<div class="row" *ngIf="data$ | async as data">
+  <div *ngFor="let url of data.urls" class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <iframe
+      [src]="url"
+      class="giphy-embed w-100 shadow-1-strong rounded mb-4"
+      allowFullScreen
+      title=""
+    >
+    </iframe>
+  </div>
+  <mat-paginator
+    [length]="data.totalCount"
+    [pageSize]="data.pageSize"
+    [pageSizeOptions]="[]"
+    (page)="handlePaginatorEvent($event)"
+  >
+  </mat-paginator>
+</div>
