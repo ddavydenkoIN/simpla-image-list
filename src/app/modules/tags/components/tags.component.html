@@ -1,0 +1,8 @@
+<ng-container class="mt-5 mb-5" *ngFor="let tag of tags">
+  <a
+    class="badge badge-light shadow-sm p-3 bg-purple rounded text-primary"
+    role="button"
+    (click)="selectATag(tag)"
+    >#{{ tag }}</a
+  >
+</ng-container>

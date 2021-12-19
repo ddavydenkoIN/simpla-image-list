@@ -1,0 +1,9 @@
+<div class="container shadow-lg p-3 mb-5 bg-white rounded mt-3">
+  <h1>Multi tag image search</h1>
+
+  <app-tags (onTagSelected)="onTagSelected($event)"></app-tags>
+
+  <ng-container *ngIf="urls$ | async as urls">
+    <app-image-list [urls]="urls"></app-image-list>
+  </ng-container>
+</div>
