@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "prettier --check ."
   },
   "private": true,
   "dependencies": {
@@ -18,19 +19,20 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "husky": "^7.0.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-builders/jest": "latest",
-    "@angular-devkit/build-angular": "~12.2.14",
+    "@angular-devkit/build-angular": "^13.1.2",
     "@angular/cli": "~12.2.14",
     "@angular/compiler-cli": "~12.2.0",
-    "@briebug/jest-schematic": "^4.0.0",
     "@types/jest": "latest",
     "@types/node": "^12.11.1",
     "jest": "latest",
+    "prettier": "^2.5.1",
     "typescript": "~4.3.5"
   }
 }
