@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TagsComponent } from './tags.component';
+import { FormsModule } from "@angular/forms";
+import '@types/jest';
 
 describe('TagsComponent', () => {
   let component: TagsComponent;
@@ -9,6 +11,7 @@ describe('TagsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [TagsComponent],
+      imports: [FormsModule],
     }).compileComponents();
   });
 

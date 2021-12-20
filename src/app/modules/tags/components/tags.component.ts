@@ -10,8 +10,14 @@ export class TagsComponent {
   onTagSelected = new EventEmitter();
 
   tags = ['dog', 'cat', 'bunny'];
+  newTag = '';
 
   selectATag(tag: string): void {
     this.onTagSelected.emit(tag);
+  }
+
+  addTag(): void {
+    this.tags.push(this.newTag);
+    this.newTag = '';
   }
 }

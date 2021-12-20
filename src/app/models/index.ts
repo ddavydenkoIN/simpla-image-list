@@ -1,1 +1,2 @@
-export * from './gif-list.model';
+export * from './interfaces';
+export * from './mocks';

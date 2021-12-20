@@ -1,8 +1,28 @@
-<ng-container class="mt-5 mb-5" *ngFor="let tag of tags">
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Add your tag"
+    aria-describedby="basic-addon2"
+    [(ngModel)]="newTag"
+  />
+  <div class="input-group-append">
+    <button
+      [disabled]="newTag.length < 3"
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="addTag()"
+    >
+      Add
+    </button>
+  </div>
+</div>
+
+<span *ngFor="let tag of tags">
   <a
     class="badge badge-light shadow-sm p-3 bg-purple rounded text-primary"
     role="button"
     (click)="selectATag(tag)"
-    >#{{ tag }}</a
+    >{{ tag }}</a
   >
-</ng-container>
+</span>
