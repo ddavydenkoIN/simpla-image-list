@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "simple-image-list": {
+    "simple-gif-gallery": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/simple-image-list",
+            "outputPath": "dist/simple-gif-gallery",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "simple-image-list:build:production"
+              "browserTarget": "simple-gif-gallery:build:production"
             },
             "development": {
-              "browserTarget": "simple-image-list:build:development"
+              "browserTarget": "simple-gif-gallery:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "simple-image-list:build"
+            "browserTarget": "simple-gif-gallery:build"
           }
         },
         "test": {
@@ -99,5 +99,5 @@
       }
     }
   },
-  "defaultProject": "simple-image-list"
+  "defaultProject": "simple-gif-gallery"
 }
